@@ -1,0 +1,36 @@
+{
+  "name": "git-project-manager",
+  "version": "1.0.0",
+  "description": "A TypeScript package for git-based project management with key:value pair storage and versioning capabilities",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "demo": "npm run build && node -r ts-node/register examples/demo.ts"
+  },
+  "keywords": [
+    "git",
+    "project-management",
+    "versioning",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^24.3.0",
+    "jest": "^30.1.1",
+    "jest-environment-jsdom": "^30.1.1",
+    "jsdom": "^26.1.0",
+    "ts-jest": "^29.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "isomorphic-git": "^1.33.1"
+  }
+}
